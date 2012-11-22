@@ -1,0 +1,1067 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_STUDENTEDIT DIALOG DISCARDABLE  0, 0, 400, 254
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_LASTNAME,7,17,72,13,ES_AUTOHSCROLL
+    CTEXT           "Demographics",IDC_DEMOGRAPHICSTAB,7,40,62,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "Contacts",IDC_CONTACTSTAB,71,40,47,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "Services",IDC_SERVICESTAB,177,40,42,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "Referrals",IDC_REFERRALSTAB,281,40,44,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "Assessments",IDC_ASSESSMENTSTAB,221,40,58,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CTEXT           "Evaluations",IDC_EVALUATIONSTAB,120,40,55,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    LTEXT           "Last Name",IDC_STATIC,7,7,39,8
+    LTEXT           "First Name",IDC_STATIC,84,7,42,8
+    LTEXT           "Middle Name",IDC_STATIC,161,7,48,8
+    LTEXT           "Soc. Security",IDC_STATIC,238,7,59,10
+    EDITTEXT        IDC_FIRSTNAME,84,17,72,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MIDDLENAME,161,17,72,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SSN,238,18,72,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SCHOOLYEAR,314,18,79,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "School Year",IDC_STATIC,314,7,45,9
+    CTEXT           "Distributions",IDC_DISTRIBUTIONSTAB,327,40,59,12,
+                    SS_NOTIFY | SS_CENTERIMAGE
+END
+
+IDD_DEMOGRAPHICSPAGE DIALOG DISCARDABLE  0, 0, 382, 194
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_HOMEPHONE,10,15,170,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Copy from Mailing Address",IDC_COPYADDRESSUP,80,32,100,
+                    12
+    EDITTEXT        IDC_ADDRESS,10,45,170,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CITY,10,70,85,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STATE,100,70,20,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZIPCODE,125,70,55,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Copy from Physical Address",IDC_COPYADDRESSDOWN,80,86,
+                    100,12
+    EDITTEXT        IDC_MAILINGADDRESS,10,99,170,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAILINGCITY,10,124,85,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAILINGSTATE,100,124,20,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAILINGZIPCODE,125,124,55,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BIRTHDATE,200,25,100,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHRONAGE,305,25,58,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    COMBOBOX        IDC_STATUS,200,49,100,159,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_STATUSDATE,305,49,58,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_ETHNICITY,200,75,100,114,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GENDER,305,75,60,129,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_GRADE,200,100,100,84,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CAMPUS,305,100,60,99,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ELIGIBILITY,200,125,165,144,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DEMOGRAPHICSCOMMENTS,10,155,365,30,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Date of Birth",IDC_STATIC,200,17,39,8
+    LTEXT           "Chron. Age",IDC_STATIC,305,17,42,8
+    LTEXT           "City",IDC_STATIC,10,62,40,8
+    LTEXT           "Comments",IDC_STATIC,10,147,41,8
+    LTEXT           "State",IDC_STATIC,100,62,20,8
+    LTEXT           "Home Phone",IDC_STATIC,10,7,46,8
+    LTEXT           "Zip Code",IDC_STATIC,125,62,31,8
+    LTEXT           "Status Date",IDC_STATIC,305,41,42,8
+    LTEXT           "Status",IDC_STATIC,200,41,26,8
+    LTEXT           "Eligibility",IDC_STATIC,200,117,29,8
+    LTEXT           "Gender",IDC_STATIC,305,67,31,8
+    LTEXT           "Ethnicity",IDC_STATIC,200,67,33,8
+    LTEXT           "Campus",IDC_STATIC,305,92,31,8
+    LTEXT           "Grade",IDC_STATIC,200,92,25,8
+    GROUPBOX        "Personal Info",IDC_STATIC,190,5,185,140
+    LTEXT           "City",IDC_STATIC,10,116,40,8
+    LTEXT           "State",IDC_STATIC,100,116,20,8
+    LTEXT           "Zip Code",IDC_STATIC,125,116,31,8
+    LTEXT           "Mailing Address",IDC_STATIC,10,91,50,8
+    LTEXT           "Physical Address",IDC_STATIC,10,37,54,8
+END
+
+IDD_CONTACTSPAGE DIALOG DISCARDABLE  0, 0, 382, 194
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MOTHERFIRSTNAME,15,30,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOTHERLASTNAME,90,30,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOTHERADDRESS,15,55,165,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOTHERCITY,15,80,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOTHERSTATE,110,80,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOTHERZIPCODE,135,80,44,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOTHERHOMEPHONE,15,110,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOTHERWORKPHONE,100,110,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOTHERCELLPHONE,15,135,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOTHEREMAIL,100,135,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FATHERFIRSTNAME,200,30,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FATHERLASTNAME,275,30,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FATHERADDRESS,200,55,165,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FATHERCITY,200,80,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FATHERSTATE,295,80,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FATHERZIPCODE,320,80,44,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FATHERHOMEPHONE,200,110,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FATHERWORKPHONE,285,110,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FATHERCELLPHONE,200,135,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FATHEREMAIL,285,135,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CONTACTSCOMMENTS,48,160,328,27,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        " Mother ",IDC_STATIC,7,7,182,148
+    LTEXT           "Last Name",IDC_STATIC,90,22,35,8
+    LTEXT           "Address",IDC_STATIC,15,47,26,8
+    LTEXT           "City",IDC_STATIC,15,72,12,8
+    LTEXT           "State",IDC_STATIC,110,72,18,8
+    LTEXT           "Zip Code",IDC_STATIC,135,72,30,8
+    LTEXT           "Work Phone",IDC_STATIC,100,102,41,8
+    LTEXT           "Home Phone",IDC_STATIC,15,102,42,8
+    LTEXT           "Cell Phone",IDC_STATIC,15,127,35,8
+    LTEXT           "E-mail Address",IDC_STATIC,100,127,47,8
+    LTEXT           "First Name",IDC_STATIC,15,22,34,8
+    LTEXT           "Comments",IDC_STATIC,10,161,33,8
+    GROUPBOX        " Father ",IDC_STATIC,194,7,182,148
+    LTEXT           "Last Name",IDC_STATIC,275,22,35,8
+    LTEXT           "Address",IDC_STATIC,200,47,26,8
+    LTEXT           "City",IDC_STATIC,200,72,12,8
+    LTEXT           "State",IDC_STATIC,295,72,18,8
+    LTEXT           "Zip Code",IDC_STATIC,320,72,30,8
+    LTEXT           "Work Phone",IDC_STATIC,285,102,41,8
+    LTEXT           "Home Phone",IDC_STATIC,200,102,42,8
+    LTEXT           "Cell Phone",IDC_STATIC,200,127,35,8
+    LTEXT           "E-mail Address",IDC_STATIC,285,127,47,8
+    LTEXT           "First Name",IDC_STATIC,200,22,34,8
+END
+
+IDD_EVALUATIONSPAGE DIALOG DISCARDABLE  0, 0, 382, 194
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_PRIMARYDISABILITY,55,18,129,167,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SECONDARYDISABILITY,55,33,129,152,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TERTIARYDISABILITY,55,48,129,137,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Multiple Disabilities",IDC_MULTIPLEDISABILITIES,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,15,66,75,10
+    EDITTEXT        IDC_EVALUATIONSCOMMENTS,223,17,149,62,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Custom1",IDC_EVALUATIONS,"CGridControl",WS_TABSTOP,7,96,
+                    365,89
+    GROUPBOX        " Disabilities ",IDC_STATIC,7,7,209,75
+    LTEXT           "Primary",IDC_STATIC,15,20,24,8
+    LTEXT           "Secondary",IDC_STATIC,15,35,35,8
+    LTEXT           "Tertiary",IDC_STATIC,15,50,24,8
+    EDITTEXT        IDC_PRIMARYDISABILITYCODE,189,18,17,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_SECONDARYDISABILITYCODE,189,33,17,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_TERTIARYDISABILITYCODE,189,48,17,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Comments",IDC_STATIC,223,7,36,9
+    LTEXT           "Evaluations",IDC_STATIC,7,86,38,8
+END
+
+IDD_SERVICESPAGE DIALOG DISCARDABLE  0, 0, 382, 194
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_INSTRUCTIONALSETTING,7,14,129,170,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LASTARDDATE,117,28,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LASTANNUALREVIEWDATE,117,41,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ITPDATE,117,54,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IEPSTARTDATE,117,67,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IEPENDDATE,117,80,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BIPDATE,117,93,50,12,ES_AUTOHSCROLL
+    CONTROL         "Medically Fragile",IDC_MEDICALLYFRAGILE,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,6,108,120,8
+    CONTROL         "Medicaid Recipient",IDC_MEDICAID,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,6,120,120,8
+    EDITTEXT        IDC_SERVICESCOMMENTS,7,140,160,47,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Custom1",IDC_INSTRUCTIONALSERVICES,"CGridControl",
+                    WS_TABSTOP,177,4,198,60
+    CONTROL         "Custom2",IDC_RELATEDSERVICES,"CGridControl",WS_TABSTOP,
+                    177,67,198,60
+    CONTROL         "Custom1",IDC_ESYSERVICES,"CGridControl",WS_TABSTOP,177,
+                    130,198,60
+    EDITTEXT        IDC_INSTRUCTIONALSETTINGCODE,140,14,27,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Instructional Setting Code",IDC_STATIC,7,5,82,8
+    LTEXT           "Date of Last ARD",IDC_STATIC,7,31,57,8
+    LTEXT           "Date of Last Annual Review",IDC_STATIC,7,44,90,8
+    LTEXT           "ITP Date",IDC_STATIC,7,57,30,8
+    LTEXT           "IEP Start Date",IDC_STATIC,7,70,46,8
+    LTEXT           "BIP Date",IDC_STATIC,7,96,30,8
+    LTEXT           "IEP End Date",IDC_STATIC,7,83,44,8
+    LTEXT           "Comment",IDC_STATIC,7,131,30,8
+END
+
+IDD_ASSESSMENTSPAGE DIALOG DISCARDABLE  0, 0, 382, 194
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_K2READINGASSESSMENT,77,21,64,172,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Mods",IDC_K2READINGMODS,142,21,29,13
+    COMBOBOX        IDC_READINGASSESSMENT,77,35,64,158,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Mods",IDC_READINGMODS,142,35,29,13
+    COMBOBOX        IDC_READINGBASELINEYEAR,175,35,28,140,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_READINGBASELINEGRADE,209,35,28,157,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_READINGBASELINEACH,245,35,28,155,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_READINGARDEXP,279,35,28,140,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_READINGGRADE,314,35,28,154,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_READINGACH,350,35,28,155,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MATHASSESSMENT,77,49,64,144,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Mods",IDC_MATHMODS,142,49,29,13
+    COMBOBOX        IDC_MATHBASELINEYEAR,175,49,28,140,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MATHBASELINEGRADE,209,49,28,144,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MATHBASELINEACH,245,49,28,140,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MATHARDEXP,279,49,28,140,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MATHGRADE,314,49,28,140,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MATHACH,350,49,28,142,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_WRITINGASSESSMENT,77,63,64,130,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Mods",IDC_WRITINGMODS,142,63,29,13
+    COMBOBOX        IDC_WRITINGARDEXP,279,63,28,140,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_WRITINGGRADE,314,63,28,129,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_WRITINGACH,350,63,28,128,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SCIENCEASSESSMENT,77,77,64,116,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Mods",IDC_SCIENCEMODS,142,77,29,13
+    COMBOBOX        IDC_SCIENCEBASELINEYEAR,175,77,28,140,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SCIENCEBASELINEGRADE,209,77,28,113,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SCIENCEBASELINEACH,245,77,28,113,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SCIENCEARDEXP,279,77,28,140,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SCIENCEGRADE,314,77,28,113,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SCIENCEACH,350,77,28,113,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SOCIALSTUDIESASSESSMENT,77,91,64,102,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Mods",IDC_SOCIALSTUDIESMODS,142,91,29,13
+    COMBOBOX        IDC_SOCIALSTUDIESBASELINEYEAR,175,91,28,140,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SOCIALSTUDIESBASELINEGRADE,209,91,28,100,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SOCIALSTUDIESBASELINEACH,245,91,28,98,
+                    CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SOCIALSTUDIESARDEXP,279,91,28,140,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SOCIALSTUDIESGRADE,314,91,28,99,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SOCIALSTUDIESACH,350,91,28,101,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENGLISHLAASSESSMENT,77,105,64,88,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Mods",IDC_ENGLISHLAMODS,142,105,29,13
+    COMBOBOX        IDC_ENGLISHLABASELINEYEAR,175,105,28,140,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENGLISHLABASELINEGRADE,209,105,28,88,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENGLISHLABASELINEACH,245,105,28,86,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENGLISHLAARDEXP,279,105,28,140,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENGLISHLAGRADE,314,105,28,86,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENGLISHLAACH,350,105,28,85,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ASSESSMENTARDDATE,77,120,64,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ASSESSMENTSCOMMENTS,8,152,368,32,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "K-2 Reading",IDC_STATIC,7,21,40,8
+    LTEXT           "State Reading",IDC_STATIC,7,35,46,8
+    LTEXT           "State Math",IDC_STATIC,7,49,36,8
+    LTEXT           "State Writing",IDC_STATIC,7,63,42,8
+    LTEXT           "State Science",IDC_STATIC,7,77,46,8
+    LTEXT           "State Social Studies",IDC_STATIC,7,91,64,8
+    LTEXT           "State English L.A.",IDC_STATIC,7,105,57,8
+    LTEXT           "Comments",IDC_STATIC,8,144,34,8
+    LTEXT           "Assessment",IDC_STATIC,77,11,38,8
+    RTEXT           "Baseline Year",IDC_STATIC,175,5,28,16
+    RTEXT           "Grade Level",IDC_STATIC,211,5,21,16
+    RTEXT           "Ach. Level",IDC_STATIC,241,5,28,16
+    RTEXT           "Grade Level",IDC_STATIC,310,5,28,16
+    RTEXT           "Ach. Level",IDC_STATIC,353,5,21,16
+    RTEXT           "ARD Exp.",IDC_STATIC,286,5,21,16
+    LTEXT           "ARD Date",IDC_STATIC,8,120,34,8
+END
+
+IDD_REFERRALSPAGE DIALOG DISCARDABLE  0, 0, 382, 194
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_REFERRALDATE,101,13,151,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_REFERRINGCAMPUS,101,26,151,159,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EVALUATIONDUEDATE,101,39,151,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_ARDDUEDATE,101,52,151,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EVALUATIONCOMPLETEDDATE,101,65,151,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ARDCOMPLETEDDATE,101,78,151,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_REFERRALELIGIBLE,101,91,151,94,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_EVALUATIONSREQUESTED,261,16,105,60,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EVALUATIONREQUESTLIST,261,78,105,107,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add...",IDC_ADDEVALUATION,261,93,50,14
+    PUSHBUTTON      "Remove",IDC_REMOVEEVALUATION,316,93,50,14
+    EDITTEXT        IDC_REFERRALSCOMMENTS,7,120,365,65,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Referral Date",IDC_STATIC,7,15,43,8
+    LTEXT           "Referring Campus",IDC_STATIC,7,28,57,8
+    LTEXT           "Evaluation Due Date",IDC_STATIC,7,41,67,8
+    LTEXT           "ARD Due Date",IDC_STATIC,7,54,49,8
+    LTEXT           "Evaluation Completed Date",IDC_STATIC,7,67,87,8
+    LTEXT           "ARD Completed Date",IDC_STATIC,7,80,69,8
+    LTEXT           "Eligible/Ineligible",IDC_STATIC,7,93,54,8
+    LTEXT           "Comments",IDC_STATIC,7,109,34,8
+    GROUPBOX        " Evaluation(s) Requested ",IDC_STATIC,257,7,115,106
+END
+
+IDD_DISTRIBUTIONSPAGE DIALOG DISCARDABLE  0, 0, 382, 194
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_DISTRIBUTIONS,"CGridControl",WS_TABSTOP,5,
+                    15,370,130
+    EDITTEXT        IDC_DISTRIBUTIONSCOMMENTS,5,155,370,30,ES_AUTOHSCROLL
+    LTEXT           "Distributions",IDC_STATIC,5,7,95,8
+    LTEXT           "Comments",IDC_STATIC,5,147,100,8
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 163, 77
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "StudentInfo Login"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,24,56,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,88,56,50,14
+    EDITTEXT        IDC_USERNAME,52,7,104,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,52,22,104,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "User Name:",IDC_STATIC,7,9,38,9
+    LTEXT           "Password:",IDC_STATIC,7,24,37,9
+    LTEXT           "Database:",IDC_STATIC,7,39,40,8
+    EDITTEXT        IDC_DATABASE,52,38,90,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OPTIONS,143,38,13,12
+END
+
+IDD_STUDENTCHOOSER DIALOG DISCARDABLE  0, 0, 152, 198
+STYLE WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SEARCHLASTNAME,47,7,98,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SEARCHFIRSTNAME,47,21,98,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SEARCHSSN,47,35,98,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SEARCHSCHOOLYEAR,47,49,98,276,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Search",IDC_SEARCHBUTTON,7,67,52,13
+    CONTROL         "Search while typing",IDC_SEARCHCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,68,69,77,9
+    LISTBOX         IDC_STUDENTLIST,7,83,138,89,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "New Student",IDC_NEWSTUDENT,10,178,61,13
+    DEFPUSHBUTTON   "Open Student",IDC_OPENSTUDENT,80,178,61,13
+    LTEXT           "Last Name",IDC_STATIC,7,9,37,11
+    LTEXT           "First Name",IDC_STATIC,7,23,36,11
+    LTEXT           "SSN",IDC_STATIC,7,37,21,10
+    LTEXT           "Year",IDC_STATIC,7,51,29,10
+END
+
+IDD_LISTEDIT DIALOG DISCARDABLE  0, 0, 244, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "List Editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,3,4,236,119
+    PUSHBUTTON      "Add",IDC_ADDLISTITEM,184,131,50,13
+    PUSHBUTTON      "Remove",IDC_REMOVELISTITEM,129,131,50,13
+END
+
+IDD_ADDLISTITEM DIALOG DISCARDABLE  0, 0, 184, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add List Item"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,71,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,45,50,14
+    EDITTEXT        IDC_LISTID,7,16,24,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LISTDESC,43,16,132,15,ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,7,7,27,8
+    LTEXT           "Description",IDC_STATIC,43,7,36,8
+END
+
+IDD_USERLIST DIALOG DISCARDABLE  0, 0, 156, 146
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_USERLIST,3,3,148,122,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New User...",IDC_NEWUSERBUTTON,15,126,55,13
+    PUSHBUTTON      "Delete User",IDC_DELETEUSERBUTTON,83,126,55,13
+END
+
+IDD_USEREDIT DIALOG DISCARDABLE  0, 0, 205, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit User"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_USERNAME,66,3,135,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD1,66,18,135,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD2,66,34,135,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "This user can modify student's data.",IDC_CANWRITE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,54,127,10
+    CONTROL         "This user is an administrator.",IDC_ISADMINOLD,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,5,67,106,12
+    PUSHBUTTON      "Cancel",IDCANCEL,151,82,50,14
+    DEFPUSHBUTTON   "OK",IDOK,96,82,50,14
+    LTEXT           "User Name",IDC_STATIC,5,6,42,9
+    LTEXT           "Password",IDC_STATIC,5,21,35,9
+    LTEXT           "Retype Password",IDC_STATIC,5,36,59,9
+END
+
+IDD_NEWSTUDENTOPTIONS DIALOG DISCARDABLE  0, 0, 165, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Student Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,49,98,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,108,98,50,14
+    CONTROL         "Create a new student.",IDC_CREATENEW,"Button",
+                    BS_AUTORADIOBUTTON,7,22,103,10
+    CONTROL         "Import a student from another school year.",IDC_IMPORT,
+                    "Button",BS_AUTORADIOBUTTON,7,32,151,13
+    EDITTEXT        IDC_IMPORTSSN,44,45,107,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "SSN:",IDC_STATIC,21,47,20,13
+    CONTROL         "Uncheck this box if you do not want to be asked this in the future.",
+                    IDC_SHOWNEWOPTIONS,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,7,60,151,35
+    LTEXT           "I would like to...",IDC_STATIC,7,7,107,9
+END
+
+IDD_BACKUP DIALOG DISCARDABLE  0, 0, 352, 253
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Backing Up Database..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,296,232,50,14
+    CONTROL         "Progress1",IDC_BACKUPPROGRESS,"msctls_progress32",
+                    WS_BORDER,8,208,336,16
+    CONTROL         "List1",IDC_BACKUPTABLELIST,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | LVS_NOLABELWRAP | LVS_NOCOLUMNHEADER | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,8,8,336,192
+END
+
+IDD_RESTORE DIALOG DISCARDABLE  0, 0, 320, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Restoring database,,,"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,264,152,50,14
+    LTEXT           "Restoring database backup...",IDC_STATIC,8,8,96,8
+    CONTROL         "Progress1",IDC_RESTOREPROGRESS,"msctls_progress32",
+                    WS_BORDER,8,136,304,8
+    LTEXT           "",IDC_RESTORESQL,8,24,304,104
+END
+
+IDD_CONNECTIONOPTIONS DIALOG DISCARDABLE  0, 0, 288, 197
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Connection Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,176,176,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,232,176,50,14
+    CONTROL         "ODBC System DSN",IDC_DSNRADIO,"Button",
+                    BS_AUTORADIOBUTTON,16,24,74,13
+    LTEXT           "DSN:",IDC_STATIC,32,40,19,11
+    EDITTEXT        IDC_DSN,72,40,208,12,ES_AUTOHSCROLL
+    LTEXT           "File:",IDC_STATIC,32,80,18,10
+    PUSHBUTTON      "Browse...",IDC_BROWSE,240,80,40,12
+    EDITTEXT        IDC_ACCESS,72,80,168,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SQLSERVER,72,120,208,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SQLADDRESS,72,136,208,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SQLDATABASE,72,152,208,12,ES_AUTOHSCROLL
+    LTEXT           "Server:",IDC_STATIC,32,120,24,8
+    LTEXT           "Address:",IDC_STATIC,32,136,28,8
+    LTEXT           "Database:",IDC_STATIC,32,152,34,8
+    LTEXT           "I want to connect to a...",IDC_STATIC,8,8,109,12
+    CONTROL         "SQL Server",IDC_SQLRADIO,"Button",BS_AUTORADIOBUTTON,16,
+                    104,59,12
+    CONTROL         "Microsoft Access File",IDC_ACCESSRADIO,"Button",
+                    BS_AUTORADIOBUTTON,16,64,93,10
+    CONTROL         "Use user prefix to identify tables. (SQL Server)",
+                    IDC_PREFIX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,176,
+                    160,10
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 168, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About StudentInfo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,104,16,50,14
+    LTEXT           "StudentInfo 2.2\nBryan Klimt (5-2002)\nbryan_klimt@hotmail.com",
+                    IDC_STATIC,8,8,80,24
+END
+
+IDD_ASSESSMENTMODS DIALOG DISCARDABLE  0, 0, 208, 245
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mods"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,96,224,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,152,224,50,14
+    LTEXT           "District Assessment:",IDC_STATIC,8,192,64,8
+    EDITTEXT        IDC_DISTRICTASSESSMENT,8,200,192,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_MODLIST,8,8,192,176,LBS_SORT | LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_STUDENTEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_DEMOGRAPHICSPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 375
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_CONTACTSPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_EVALUATIONSPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_SERVICESPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_ASSESSMENTSPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_REFERRALSPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_DISTRIBUTIONSPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 378
+        TOPMARGIN, 7
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_STUDENTCHOOSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_LISTEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_ADDLISTITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_USERLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_USEREDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_NEWSTUDENTOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_BACKUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_RESTORE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_CONNECTIONOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_ASSESSMENTMODS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINWINDOW MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Student",                ID_FILE_NEW
+        MENUITEM "&Open Student",               ID_FILE_OPEN
+        MENUITEM "&Close Student",              ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Sho&w Options on New",        ID_FILE_SHOWOPTIONSONNEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Student",               ID_FILE_SAVE
+        MENUITEM "Save &All Students",          ID_FILE_SAVEALL
+        MENUITEM "&Delete Student",             ID_FILE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Admin"
+    BEGIN
+        POPUP "Edit &List"
+        BEGIN
+            MENUITEM "&Campus",                     ID_EDITLIST_CAMPUS
+            MENUITEM "&Eligibility",                ID_EDITLIST_ELIGIBILITY
+            MENUITEM "E&thnicity",                  ID_EDITLIST_ETHNICITY
+            MENUITEM "Ge&nder",                     ID_EDITLIST_GENDER
+            MENUITEM "&Grade",                      ID_EDITLIST_GRADE
+            MENUITEM "&Status",                     ID_EDITLIST_STATUS
+            MENUITEM SEPARATOR
+            MENUITEM "&Assessment",                 ID_EDITLIST_ASSESSMENT
+            MENUITEM "Assessment &Mod",             ID_EDITLIST_ASSESSMENTMOD
+
+            MENUITEM "Ac&h Level",                  ID_EDITLIST_ACHLEVEL
+            MENUITEM "Grade &Level",                ID_EDITLIST_GRADELEVEL
+            MENUITEM SEPARATOR
+            MENUITEM "&Disability",                 ID_EDITLIST_DISABILITY
+            MENUITEM "E&ligibility (Evaluations)",  ID_EDITLIST_EVALUATIONELIGIBLE
+
+            MENUITEM "Eligi&bility (Referrals)",    ID_EDITLIST_REFERRALELIGIBLE
+
+            MENUITEM "E&valuation Type",            ID_EDITLIST_EVALUATIONTYPE
+
+            MENUITEM "&Instructional Setting",      ID_EDITLIST_INSTRUCTIONALSETTING
+
+            MENUITEM SEPARATOR
+            MENUITEM "ES&Y Service Type",           ID_EDITLIST_ESYSERVICETYPE
+
+            MENUITEM "Instr&uctional Service Type", ID_EDITLIST_INSTRUCTIONALSERVICETYPE
+
+            MENUITEM "&Related Service Type",       ID_EDITLIST_RELATEDSERVICETYPE
+
+            MENUITEM "Service Ty&pe (Direct/Consult)", 
+                                                    ID_EDITLIST_SERVICETYPE
+            MENUITEM SEPARATOR
+            MENUITEM "Distribution D&ocument",      ID_EDITLIST_DOCUMENT
+            MENUITEM "Distri&bution Method",        ID_EDITLIST_DISTRIBUTIONMETHOD
+
+            MENUITEM "Initial Distribution",        ID_EDITLIST_INITIALDISTRIBUTION
+
+            MENUITEM SEPARATOR
+            MENUITEM "School &Year",                ID_EDITLIST_SCHOOLYEAR
+        END
+        MENUITEM "Edit &Users...",              ID_ADMIN_EDITUSERS
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Student &Chooser",            ID_VIEW_STUDENTCHOOSER
+        MENUITEM SEPARATOR
+        MENUITEM "&Backup database...",         ID_TOOLS_BACKUP
+        MENUITEM "&Restore database...",        ID_TOOLS_RESTORE
+        MENUITEM SEPARATOR
+        MENUITEM "&Query Wizard...",            ID_TOOLS_QUERY
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "Cl&ose",                      ID_WINDOW_CLOSE
+        MENUITEM "Close &All",                  ID_WINDOW_CLOSEALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Previous",                   ID_WINDOW_PREVIOUS, GRAYED
+        MENUITEM "&Next",                       ID_WINDOW_NEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "Tile &Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertically",            ID_WINDOW_TILE_VERT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About StudentInfo...",       ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINWINDOW TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    SEPARATOR
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_SAVEALL
+    SEPARATOR
+    BUTTON      ID_VIEW_STUDENTCHOOSER
+    BUTTON      ID_TOOLS_QUERY
+    SEPARATOR
+    BUTTON      ID_WINDOW_NEXT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINWINDOW          BITMAP  DISCARDABLE     "toolbar.bmp"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 2,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", " \0"
+            VALUE "FileDescription", "StudentInfo\0"
+            VALUE "FileVersion", "2, 2, 0, 0\0"
+            VALUE "InternalName", "StudentInfo\0"
+            VALUE "LegalCopyright", "Copyright © 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "StudentInfo.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "StudentInfo\0"
+            VALUE "ProductVersion", "2, 2, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINWINDOW          ICON    DISCARDABLE     "mainwindow.ico"
+IDI_STUDENTINFO         ICON    DISCARDABLE     "studentinfo.ico"
+IDI_CHECK               ICON    DISCARDABLE     "check.ico"
+IDI_NOCHECK             ICON    DISCARDABLE     "nocheck.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINWINDOW ACCELERATORS DISCARDABLE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_TOOLS_QUERY,         VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          ID_FILE_CLOSE,          VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+    VK_SPACE,       ID_VIEW_STUDENTCHOOSER, VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ASSESSMENTSPAGE DLGINIT
+BEGIN
+    IDC_READINGGRADE, 0x403, 4, 0
+0x2d4b, 0x0032, 
+    IDC_MATHGRADE, 0x403, 4, 0
+0x2d4b, 0x0032, 
+    IDC_WRITINGGRADE, 0x403, 4, 0
+0x2d4b, 0x0032, 
+    IDC_SCIENCEGRADE, 0x403, 4, 0
+0x2d4b, 0x0032, 
+    IDC_SOCIALSTUDIESGRADE, 0x403, 4, 0
+0x2d4b, 0x0032, 
+    IDC_ENGLISHLAGRADE, 0x403, 4, 0
+0x2d4b, 0x0032, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new student.\nNew Student"
+    ID_FILE_OPEN            "Open the currently selected students.\nOpen Student"
+    ID_FILE_CLOSE           "Close this student.\nClose Student"
+    ID_FILE_SAVE            "Save this student.\nSave Student"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINWINDOW          "StudentInfo 2.2"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "StudentInfo"
+    AFX_IDS_IDLEMESSAGE     " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_CLOSE         "Close this student.\nClose Window"
+    ID_WINDOW_CLOSEALL      "Close all students.\nClose All"
+    ID_WINDOW_NEXT          "Show the next window.\nShow Next Open Student"
+    ID_FILE_SAVEALL         "Save all of the open students.\nSave All Students"
+    ID_VIEW_STUDENTCHOOSER  "Show the StudentChooser window.\nShow StudentChooser"
+    ID_FILE_DELETE          "Delete the selected student.\nDelete Student"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_EXIT             "Quit the StudentInfo program.\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ADMIN_EDITUSERS      "Edit the users of the database.\nEdit Users"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_QUERY          "Launch the QueryWizard program.\nLaunch QueryWizard"
+    ID_TOOLS_BACKUP         "Backup the database to a file.\nBackup Database"
+    ID_TOOLS_RESTORE        "Restore the database from a backup file.\nRestore Database"
+    ID_FILE_SHOWOPTIONSONNEW 
+                            "If this is checked, you will be asked for options when you make a new student.\n "
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
